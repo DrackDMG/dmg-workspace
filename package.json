@@ -11,7 +11,7 @@
     "dmg-side-menu:build": "ng build dmg-side-menu",
     "dmg-side-menu:test": "ng test dmg-side-menu --no-watch --no-progress --browsers=ChromeHeadless",
     "dmg-side-menu:lint": "ng lint dmg-side-menu",
-    "dmg-side-menu:publish": "npm run dmg-side-menu:test && npm run dmg-side-menu:build && npm publish dist/dmg-side-menu"
+    "dmg-side-menu:publish": "npm run dmg-side-menu:test && npm run dmg-side-menu:build && npm publish dist/dmg-side-menu/"
   },
   "prettier": {
     "overrides": [
