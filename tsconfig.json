@@ -3,6 +3,11 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "dmg-side-menu": [
+        "./dist/dmg-side-menu"
+      ]
+    },
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
@@ -22,5 +27,13 @@
     "typeCheckHostBindings": true,
     "strictTemplates": true
   },
-  "files": []
+  "files": [],
+  "references": [
+    {
+      "path": "./projects/dmg-side-menu/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/dmg-side-menu/tsconfig.spec.json"
+    }
+  ]
 }
