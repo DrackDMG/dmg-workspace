@@ -26,8 +26,23 @@
           "options": {
             "tsConfig": "projects/dmg-side-menu/tsconfig.spec.json"
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/dmg-side-menu/**/*.ts",
+              "projects/dmg-side-menu/**/*.html"
+            ],
+            "eslintConfig": "projects/dmg-side-menu/eslint.config.js"
+          }
         }
       }
     }
+  },
+  "cli": {
+    "schematicCollections": [
+      "angular-eslint"
+    ]
   }
 }

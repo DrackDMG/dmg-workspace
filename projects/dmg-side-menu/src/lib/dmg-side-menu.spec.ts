@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { DmgSideMenu } from './dmg-side-menu';
+import { provideZonelessChangeDetection } from '@angular/core';
 
 describe('DmgSideMenu', () => {
   let component: DmgSideMenu;
@@ -8,7 +9,8 @@ describe('DmgSideMenu', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [DmgSideMenu]
+      imports: [DmgSideMenu],
+      providers: [provideZonelessChangeDetection()]
     })
     .compileComponents();
 
