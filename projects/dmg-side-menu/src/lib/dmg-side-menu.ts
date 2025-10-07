@@ -17,6 +17,8 @@ export class DmgSideMenu {
   isAuthenticated = input(false);
 
   titleColor = input<TitleColor>(TitleColor.purple);
+  title = input<string>('DMG');
+  subtitle = input<string>('Corp');
 
   onSignOut = output();
   onSignIn = output();
