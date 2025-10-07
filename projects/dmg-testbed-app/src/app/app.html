@@ -2,4 +2,4 @@
   Hello world!
 </h1>
 
-<lib-dmg-side-menu></lib-dmg-side-menu>
+<lib-dmg-side-menu [titleColor]="TitleColor.red" [isAuthenticated]="isAuthenticated()" (onSignOut)="onSignOut()" (onSignIn)="onSignIn()"></lib-dmg-side-menu>
